@@ -36,7 +36,7 @@
                     $cliente->setEmail($linha['email']);
                     $cliente->setTelefone($linha['telefone']);
 
-                    array_push($Clientees,$Cliente);
+                    array_push($clientes,$cliente);
                 }
 
                 return $clientes;
