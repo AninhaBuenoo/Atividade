@@ -29,7 +29,7 @@
                 $vendas = array();
                 foreach($query->fetchAll(PDO::FETCH_ASSOC) as $linha) {
                     // Para a associação com o cliente
-                    $daocliente = new ClienteDAO();
+                    $daoCliente = new ClienteDAO();
                     $cliente = $daoCliente->find($linha['id_cliente']);
                     
                     // Para a associação com o Usuário
